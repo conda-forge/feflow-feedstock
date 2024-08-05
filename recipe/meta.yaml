@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,6 +28,7 @@ requirements:
     - openff-units
     - openmm
     - openmmforcefields >=0.14.1  # TODO: remove when upstream deps fix this
+    - pydantic <2
     - pymbar ~=3.0
 
 test:
