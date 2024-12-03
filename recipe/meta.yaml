@@ -1,13 +1,13 @@
 {% set name = "feflow" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/choderalab/feflow/archive/{{ version }}.tar.gz
-  sha256: 607e47cfec75447dc8c97e20109f9a367a5fbc2d255b1b14923a4a58f4e12645
+  url: https://github.com/OpenFreeEnergy/feflow/archive/{{ version }}.tar.gz
+  sha256: 284a6926df4fc6163be1227f2772d32d6227015e4f4a9a2e031a106c54e6b716
 
 build:
   noarch: python
@@ -22,13 +22,14 @@ requirements:
     - pip
   run:
     - python >=3.10
-    - gufe ~=1.0
+    - gufe >=1.0
     - numpy
-    - openfe ~=1.0  # TODO: Remove once we don't depend on openfe
+    - openfe >=1.0  # TODO: Remove once we don't depend on openfe
     - openff-units
     - openmm
     - openmmforcefields >=0.14.1  # TODO: remove when upstream deps fix this
-    - pydantic <2
+    - openmmtools >=0.23.0
+    - pydantic >=1.10.17
     - pymbar ~=3.0
 
 test:
@@ -36,7 +37,7 @@ test:
     - feflow
 
 about:
-  home: https://github.com/choderalab/feflow
+  home: https://github.com/OpenFreeEnergy/feflow
   summary: Recipes and protocols for molecular free energy calculations using the openmmtools/perses and Open Free Energy toolkits
   license: MIT
   license_file: LICENSE
