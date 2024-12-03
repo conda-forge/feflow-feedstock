@@ -35,6 +35,12 @@ requirements:
 test:
   imports:
     - feflow
+  requires:
+    - pip
+    - pytest
+    - pytest-xdist
+  commands:
+    - pytest -n auto -v --pyargs feflow
 
 about:
   home: https://github.com/OpenFreeEnergy/feflow
