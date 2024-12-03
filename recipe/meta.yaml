@@ -1,5 +1,5 @@
 {% set name = "feflow" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/choderalab/feflow/archive/{{ version }}.tar.gz
-  sha256: 607e47cfec75447dc8c97e20109f9a367a5fbc2d255b1b14923a4a58f4e12645
+  sha256: 284a6926df4fc6163be1227f2772d32d6227015e4f4a9a2e031a106c54e6b716
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
