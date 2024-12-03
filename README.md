@@ -144,6 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@IAlibay](https://github.com/IAlibay/)
+* [@dotsdl](https://github.com/dotsdl/)
 * [@ijpulidos](https://github.com/ijpulidos/)
 * [@mikemhenry](https://github.com/mikemhenry/)
 
