@@ -25,13 +25,13 @@ requirements:
     - python >={{ python_min }}
     - gufe >=1.0
     - numpy
-    - openfe >=1.0  # TODO: Remove once we don't depend on openfe
+    - openfe >=1.1.0  # TODO: Remove once we don't depend on openfe
     - openff-units
     - openmm
     - openmmforcefields >=0.14.1  # TODO: remove when upstream deps fix this
     - openmmtools >=0.23.0
     - pydantic >=1.10.17
-    - pymbar ~=3.0
+    - pymbar >4.0
 
 test:
   imports:
