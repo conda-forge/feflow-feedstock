@@ -36,6 +36,7 @@ test:
   imports:
     - feflow
   requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/OpenFreeEnergy/feflow
