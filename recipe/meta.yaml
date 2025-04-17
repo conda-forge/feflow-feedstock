@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/feflow/archive/{{ version }}.tar.gz
-  sha256: 0bf0457ce048f6b0bcaf6fa904e7183f31e88cd73c53ee21a5ea41e70ebafe54
+  sha256: ca689afd7b2ffa2e07e567ac07f7881898954cf06fe16b29089e2b3e85250883
 
 build:
   noarch: python
