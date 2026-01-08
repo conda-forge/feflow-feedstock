@@ -1,5 +1,5 @@
 {% set name = "feflow" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/feflow/archive/{{ version }}.tar.gz
-  sha256: 095261627480d4c0a82485c3707968a0b943243c2fff510d6eccff47176fc888
+  sha256: 8be682a7aef423ecdffffe7a2c674686290923a07dbfe5a4f781d9b1a559ece1
 
 build:
   noarch: python
