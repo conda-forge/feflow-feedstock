@@ -1,5 +1,5 @@
 {% set name = "feflow" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/feflow/archive/{{ version }}.tar.gz
-  sha256: 8be682a7aef423ecdffffe7a2c674686290923a07dbfe5a4f781d9b1a559ece1
+  sha256: 286e3c1cfc541121ade923fdf45d3beca120777cf61026c5d928619448c9db1c
 
 build:
   noarch: python
@@ -23,13 +23,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - gufe >=1.7,<1.8
+    - gufe >=1.9.0,<2
     - numpy
-    - openfe >=1.8,<1.9  # TODO: Remove once we don't depend on openfe
+    - openfe >=1.10.0,<2  # TODO: Remove once we don't depend on openfe
     - openff-units
     - openmm
     - openmmtools >=0.23.0
-    - pydantic >=1.10.17,<3
+    - pydantic >=2,<3
     - pymbar >4.0
 
 test:
